@@ -5,10 +5,7 @@
     padding: 0;
 }
 body{
-    color: #ccc;
-}
-.flex_container{
-    display: flex;
+     color: #ccc;
 }
 
 /* Parte principale */
@@ -26,10 +23,40 @@ main{
 }
 
 /* Parte bassa main  */
-
+    /* Regole freccia  */
+.freccia_general{
+    font-size: 50px;
+}
+.image{
+    width: 20%;
+    object-fit: cover;
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+/* Regole flex  */
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+.flex_container_image{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+.page_number{
+    color: white;
+}
 
 /* footer  */
 footer{
     background-color: rgb(26, 24, 24);
     height:80px;
+    z-index: 999;
 }
