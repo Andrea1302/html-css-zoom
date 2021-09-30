@@ -29,11 +29,12 @@ main{
 }
 .image{
     width: 20%;
-    object-fit: cover;
+    padding: 0 2px;
+    
 }
 .image img{
+    object-fit: cover;
     width: 100%;
-    height: auto;
 }
 /* Regole flex  */
 .flex_container{
@@ -41,7 +42,7 @@ main{
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 .flex_container_image{
     display: flex;
