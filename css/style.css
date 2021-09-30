@@ -6,12 +6,14 @@
 }
 body{
      color: #ccc;
+     background-color: black;
 }
 
 /* Parte principale */
 main{
     background-color: black;
-    height: calc( 100vh - 80px);
+    height: calc( 100vh - 100px);
+    overflow-y: hidden;
 }
 /* Parte alta main  */
 #main_alto{
@@ -30,11 +32,21 @@ main{
 .image{
     width: 20%;
     padding: 0 2px;
-    
+    position: relative;
+    padding: 2px;
+}
+.nome_cognome{
+    color: white;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+
 }
 .image img{
-    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 /* Regole flex  */
 .flex_container{
@@ -42,14 +54,12 @@ main{
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    overflow-y: hidden;
 }
 .flex_container_image{
     display: flex;
     justify-content: space-between;
     padding: 10px;
     flex-wrap: wrap;
-    overflow-y: hidden;
 }
 .page_number{
     color: white;
@@ -59,5 +69,39 @@ main{
 footer{
     background-color: rgb(26, 24, 24);
     height:80px;
-    z-index: 999;
+    margin-top: 20px;
+}
+.flex_container_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.footer_sx,.footer_center{
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.clickhere_footer{
+    color:#ccc;
+    margin-left: 10px;
+}
+.item_footer{
+    margin-left:30px;
+}
+.fas.fa-share-square{
+    color: yellowgreen;
+}
+#red{
+    color: red;
+    text-decoration: none;
+    height: 100%;
+    line-height: 80px;
+    padding: 0 10px;
+}
+
+/* Regole hover  */
+.hover:hover{
+    background-color: rgba(75, 75, 75, 0.6);
 }
