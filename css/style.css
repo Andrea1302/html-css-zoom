@@ -4,12 +4,31 @@
     margin: 0;
     padding: 0;
 }
+body{
+    color: #ccc;
+}
+.flex_container{
+    display: flex;
+}
 
+/* Parte principale */
 main{
     background-color: black;
     height: calc( 100vh - 80px);
 }
+/* Parte alta main  */
+#main_alto{
+    justify-content: flex-end;
+    padding: 10px;
+}
+#speaker_view,#espandi{
+    margin:0  3px;
+}
 
+/* Parte bassa main  */
+
+
+/* footer  */
 footer{
     background-color: rgb(26, 24, 24);
     height:80px;
