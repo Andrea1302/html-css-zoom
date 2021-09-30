@@ -74,7 +74,7 @@ footer{
 .flex_container_footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    font-size: 20px;
     height: 100%;
 }
 .footer_sx,.footer_center{
